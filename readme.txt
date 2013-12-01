@@ -3,7 +3,7 @@ Contributors: Enea Overclokk
 Tags: stellissimo, stellissimo.biz, seo contest
 Requires at least: 2.7.0
 Tested up to: 3.4.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 This plugin add a box to insert the text you want at the end of each article.
 
