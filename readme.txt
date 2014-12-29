@@ -1,9 +1,9 @@
 ﻿=== Stellissimo Text Box ===
 Contributors: Enea Overclokk
-Tags: stellissimo, stellissimo.biz, seo contest
+Tags: textbox, text box
 Requires at least: 2.7.0
-Tested up to: 3.4.2
-Stable tag: 1.1
+Tested up to: 4.1.0
+Stable tag: 1.1.1
 
 This plugin add a box to insert the text you want at the end of each article.
 
@@ -15,14 +15,15 @@ This plugin has been developed for <a href="http://www.stellissimo.biz">Stelliss
 
 More info:
 
-* Official Website of the plugin [Stellissimo.biz](http://www.stellissimo.biz).
+* Official Website of the plugin [Overclokk.net](http://www.overclokk.net/stellissimo-text-box-per-wordpress).
 
 == Installation ==
 
 
 1. Upload folder `stellissimo-text-box` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Proceed to the configuration in the settings menu. 
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Proceed to the configuration in the settings menu.
+4. Add your txt or HTML, this will show in each pages and posts
 
 == Frequently Asked Questions ==
 

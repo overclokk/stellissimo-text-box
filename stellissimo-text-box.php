@@ -3,7 +3,7 @@
 Plugin Name: Stellissimo Text Box
 Plugin URI: http://www.overclokk.net/stellissimo-text-box-per-wordpress
 Description: This plugin add a box containing text/html you want show at the end of each article
-Version: 1.0
+Version: 1.1.1
 Author: Enea Overclokk
 Author URI: http://www.overclokk.net
  */
@@ -84,7 +84,7 @@ function stellissimo_update_options_form()
                        <th scope="row"><label for="stellissimo_text_content">Box Text</label></th>
                            <td>
                                <textarea id="stellissimo_text_content" name="stellissimo_text_content" style="width:400px; height:200px"><?php echo get_option('stellissimo_text_content'); ?></textarea>
-                               <span class="description"><br>Insert here a TEXT or HTML code</span>    
+                               <span class="description"><br>Insert here a TEXT or HTML code, this will be show in each pages and posts</span>    
                            </td>
                    </tr>
                    <tr valign="top">
