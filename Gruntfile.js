@@ -52,6 +52,15 @@ module.exports = function(grunt) {
         //         "ids": false,
         //     }
         // },
+        // 
+
+        gitcheckout: {
+            your_target: {
+                options: {
+                    branch: 'master'
+                }
+            }
+        },
 
         version: {  // https://www.npmjs.com/package/grunt-version
                     // http://jayj.dk/using-grunt-automate-theme-releases/
