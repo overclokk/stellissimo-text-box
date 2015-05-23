@@ -55,9 +55,14 @@ module.exports = function(grunt) {
         // 
 
         gitcheckout: {
-            your_target: {
+            devtomaster: {
                 options: {
                     branch: 'master'
+                }
+            },
+            mastertodev: {
+                options: {
+                    branch: 'Dev'
                 }
             }
         },
