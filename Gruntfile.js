@@ -67,6 +67,19 @@ module.exports = function(grunt) {
             }
         },
 
+        gitmerge: {
+            devtomaster: {
+                options: {
+                    branch: 'master'
+                }
+            },
+            mastertodev: {
+                options: {
+                    branch: 'Dev'
+                }
+            }
+        },
+
         version: {  // https://www.npmjs.com/package/grunt-version
                     // http://jayj.dk/using-grunt-automate-theme-releases/
             // bower: {
