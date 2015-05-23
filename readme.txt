@@ -40,6 +40,14 @@ Notify any issue on github repository https://github.com/overclokk/stellissimo-t
 
 == Changelog ==
 
+= 1.1.2 =
+Release Date: 
+
+Dev time: 3h
+
+* Update some files
+* Added new workflow
+
 = 1.1.1 =
 Release Date: 
 
