@@ -47,6 +47,7 @@ Dev time: 3h
 
 * Update some files
 * Added new workflow
+* Fix some issue
 
 = 1.1.1 =
 Release Date: 

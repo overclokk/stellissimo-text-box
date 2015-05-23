@@ -51,6 +51,7 @@ Notify any issue on github repository https://github.com/overclokk/stellissimo-t
 
 * Update some files
 * Added new workflow
+* Fix some issue
 
 ### 1.1.1 ###
 Release Date: 
