@@ -68,14 +68,14 @@ module.exports = function(grunt) {
         },
 
         gitmerge: {
-            frommaster: { // Prima devo essere in dev e poi fare il merge sa master
-                options: {
-                    branch: 'master'
-                }
-            },
             fromdev: { // Prima devo essewre in master e poi fare il merge da Dev
                 options: {
                     branch: 'Dev'
+                }
+            },
+            frommaster: { // Prima devo essere in dev e poi fare il merge sa master
+                options: {
+                    branch: 'master'
                 }
             }
         },
@@ -351,6 +351,13 @@ module.exports = function(grunt) {
                                 'prompt',
                                 'compress',
                                 'github-release',
+                                ]);
+
+    grunt.registerTask('gittask', [
+                                'gitcheckout:devtomaster',
+                                'gitmerge:fromdev',
+                                'gitcheckout:mastertodev',
+                                'gitmerge:frommaster'
                                 ]);
 
     grunt.registerTask('testcssbuild', ['less', 'compass', 'csslint']);
