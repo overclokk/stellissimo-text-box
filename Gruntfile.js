@@ -351,7 +351,7 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy', [
                                 'version',
                                 'wp_readme_to_markdown',
-                                'gitcommit',
+                                'gitcommit:version',
                                 'gitpush',
                                 'prompt',
                                 'compress',
