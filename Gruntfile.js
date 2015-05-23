@@ -123,15 +123,16 @@ module.exports = function(grunt) {
                         ]
                 }
             },
-            test:{
+            first:{
                 options: {
-                    message: 'Test'
+                    message: 'Commit before deploy of new version'
                 },
                 files: {
                     src: [
                         '*.js',
                         '*.txt',
-                        '*.php'
+                        '*.php',
+                        '*.json'
                         ]
                 }
             }
@@ -337,11 +338,9 @@ module.exports = function(grunt) {
      *
      * Aggiornare la lingua con poedit
      *
-     * Merge Dev into Master
-     * 
-     * Checkout in master (not dev)
-     * 
      * Change version only in package.json
+     *
+     * 
      * $ grunt deploy
      * 
      * Poi nella cartella svn-wordpress
@@ -349,6 +348,9 @@ module.exports = function(grunt) {
      * dx mouse e committ
      */
     grunt.registerTask('deploy', [
+                                'gitcommit:first',
+                                'gitcheckout:devtomaster',
+                                'gitmerge:fromdev',
                                 'version',
                                 'wp_readme_to_markdown',
                                 'gitcommit:version',
@@ -357,6 +359,9 @@ module.exports = function(grunt) {
                                 'compress',
                                 'github-release',
                                 'copy',
+                                'gitcheckout:mastertodev',
+                                'gitmerge:frommaster',
+                                'gitpush',
                                 ]);
 
     grunt.registerTask('release', [
