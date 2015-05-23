@@ -68,12 +68,12 @@ module.exports = function(grunt) {
         },
 
         gitmerge: {
-            tomaster: {
+            frommaster: {
                 options: {
                     branch: 'master'
                 }
             },
-            todev: {
+            fromdev: {
                 options: {
                     branch: 'Dev'
                 }
