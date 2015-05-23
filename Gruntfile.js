@@ -122,6 +122,14 @@ module.exports = function(grunt) {
                         'stellissimo-text-box.php'
                         ]
                 }
+            },
+            test:{
+                options: {
+                    message: 'Test'
+                },
+                files: {
+                    src: ['*.js']
+                }
             }
         },
 
