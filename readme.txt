@@ -41,7 +41,7 @@ Notify any issue on github repository https://github.com/overclokk/stellissimo-t
 == Changelog ==
 
 = 1.1.2 =
-Release Date: 
+Release Date: May 23rd, 2015
 
 Dev time: 3h
 
