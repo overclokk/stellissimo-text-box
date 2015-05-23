@@ -47,6 +47,7 @@ Dev time: 3h
 
 * Update some files
 * Added new workflow
+* Test
 
 = 1.1.1 =
 Release Date: 
