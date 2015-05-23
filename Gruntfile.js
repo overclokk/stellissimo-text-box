@@ -356,8 +356,10 @@ module.exports = function(grunt) {
     grunt.registerTask('gittask', [
                                 'gitcheckout:devtomaster',
                                 'gitmerge:fromdev',
+                                'gitpush',
                                 'gitcheckout:mastertodev',
-                                'gitmerge:frommaster'
+                                'gitmerge:frommaster',
+                                'gitpush',
                                 ]);
 
     grunt.registerTask('testcssbuild', ['less', 'compass', 'csslint']);
