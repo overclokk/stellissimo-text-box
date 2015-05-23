@@ -55,12 +55,12 @@ module.exports = function(grunt) {
         // 
 
         gitcheckout: {
-            devtomaster: {
+            devtomaster: { // Mi sposto da Dev a master
                 options: {
                     branch: 'master'
                 }
             },
-            mastertodev: {
+            mastertodev: { // Mi sposto da master a Dev
                 options: {
                     branch: 'Dev'
                 }
@@ -68,12 +68,12 @@ module.exports = function(grunt) {
         },
 
         gitmerge: {
-            frommaster: {
+            frommaster: { // Prima devo essere in dev e poi fare il merge sa master
                 options: {
                     branch: 'master'
                 }
             },
-            fromdev: {
+            fromdev: { // Prima devo essewre in master e poi fare il merge da Dev
                 options: {
                     branch: 'Dev'
                 }
