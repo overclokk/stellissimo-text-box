@@ -128,7 +128,11 @@ module.exports = function(grunt) {
                     message: 'Test'
                 },
                 files: {
-                    src: ['*.js']
+                    src: [
+                        '*.js',
+                        '*.txt',
+                        '*.php'
+                        ]
                 }
             }
         },
