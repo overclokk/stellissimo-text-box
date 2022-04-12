@@ -4,6 +4,7 @@
 
 #Grunt developer
 node_modules
+dist
 
 #Sass directory
 css/src/sass/.sass-cache

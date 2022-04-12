@@ -1,6 +1,6 @@
 {
   "name": "stellissimo-text-box",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "This plugin add a box to insert the text you want at the end of each article.",
   "repository": {
     "type": "git",
@@ -12,21 +12,24 @@
   ],
   "author": "Enea Overclokk",
   "license": "GPLv2",
+  "scripts": {
+    "copy": "grunt copy:dist"
+  },
   "bugs": {
     "url": "https://github.com/overclokk/stellissimo-text-box/issues"
   },
   "homepage": "https://github.com/overclokk/stellissimo-text-box",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-wp-readme-to-markdown": "^0.9.0",
-    "grunt-version": "^1.0.0",
-    "grunt-git": "^0.3.4",
-    "grunt-prompt": "^1.3.0",
     "grunt-contrib-compress": "^0.13.0",
-    "grunt-github-releaser": "^0.1.17",
-    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-uglify": "^0.9.1"
+    "grunt-git": "^0.3.7",
+    "grunt-github-releaser": "^0.1.18",
+    "grunt-prompt": "^1.3.3",
+    "grunt-version": "^1.3.2",
+    "grunt-wp-readme-to-markdown": "^0.9.0"
   }
 }

@@ -1,3 +1,54 @@
+
+
+const FILES_FOR_PRODUCTION = [
+
+    // All files
+    '**',
+
+    // Not this dirs
+    '!**/.git/**',
+    '!**/node_modules/**',
+    '!**/test*/**',
+    '!**/__tests__/**',
+    '!assets/sass/**',
+    '!assets/**/src/**',
+    '!dist/**',
+    '!blocks/**/src/**',
+    '!_docker/**',
+
+    '!jest-preset-default/**',
+
+    // Not this files
+    '!.env*',
+    '!.gitattributes',
+    '!.gitignore',
+    '!c3.php',
+    '!codecept*',
+    '!composer*',
+    '!Gruntfile.js',
+    '!DOCS.md',
+    '!lerna.json',
+    '!infection*',
+    // '!package*',
+    // '!blocks/**/package*',
+    '!**/package*',
+    // '!blocks/**/webpack*',
+    '!**/webpack*',
+    // '!blocks/**/tsconfig*',
+    '!**/tsconfig*',
+    '!*config.js', // jest-configs files
+    '!phpstan*',
+    '!phpbench*',
+    '!*.xml',
+    '!*.yml',
+    '!*.zip',
+    '!*.svg',
+    '!**/*.scss',
+    '!**/*.ts*',
+
+    // '!vendor/**' // Only for local development
+];
+
 module.exports = function(grunt) {
     'use strict';
     grunt.initConfig({
@@ -203,6 +254,13 @@ module.exports = function(grunt) {
         },
 
         copy: { // https://github.com/gruntjs/grunt-contrib-copy
+            dist: {
+                expand: true, // https://github.com/gruntjs/grunt-contrib-copy/issues/90
+                // cwd: path.resolve(),
+                src: FILES_FOR_PRODUCTION,
+                dest: 'dist/',
+                filter: 'isFile',
+            },
             tosvn: {
                 expand: true,
                 src: [
