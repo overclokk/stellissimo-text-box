@@ -3,7 +3,7 @@
  * Plugin Name: Stellissimo Text Box
  * Plugin URI: http://www.overclokk.net/stellissimo-text-box-per-wordpress
  * Description: This plugin add a box containing text/html you want show at the end of each article
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: Enea Overclokk
  * Author URI: http://www.overclokk.net
  *

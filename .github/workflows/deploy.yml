@@ -19,7 +19,7 @@ jobs:
         npm run copy
     - name: WordPress Plugin Deploy
       id: deploy
-      uses: 10up/action-wordpress-plugin-deploy@stable
+      uses: 10up/action-wordpress-plugin-deploy@develop
       with:
         generate-zip: true
       env:

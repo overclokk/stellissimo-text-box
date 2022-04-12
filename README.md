@@ -4,7 +4,7 @@ Donate link:
 **Tags:** textbox, text box  
 **Requires at least:** 2.7.0  
 **Tested up to:** 4.3.0  
-**Stable tag:** 1.1.3  
+**Stable tag:** 1.1.4  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -43,6 +43,22 @@ Notify any issue on github repository https://github.com/overclokk/stellissimo-t
 
 
 ## Changelog ##
+
+### 1.1.4 ###
+**Release Date:** April 12th, 2022  
+
+**Dev time:** 1h  
+
+* Update some files
+* Added new workflow
+
+### 1.1.3 ###
+**Release Date:** April 12th, 2022  
+
+**Dev time:** 1h  
+
+* Update some files
+* Added new workflow
 
 ### 1.1.2 ###
 **Release Date:** May 23rd, 2015  
