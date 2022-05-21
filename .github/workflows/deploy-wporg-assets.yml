@@ -5,13 +5,13 @@ on:
     branches:
     - master
 
-permissions: read-all
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
 
 jobs:
   deploy:
     name: Deploy updates
     runs-on: ubuntu-latest
-    environment: wp.org plugin
 
     steps:
       - name: Check out Git repository
