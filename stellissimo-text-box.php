@@ -27,6 +27,9 @@
 // ================== ADD text ================== //
 add_filter('the_content', 'stellissimo_output_text_box');
 
+/**
+ * @var string $content
+ */
 function stellissimo_output_text_box($content)
 {
 
